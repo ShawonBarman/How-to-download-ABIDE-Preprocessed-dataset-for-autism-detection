@@ -34,12 +34,4 @@ Acceptable strategies include:
 - nofilt_global (global signal regression only)
 - nofilt_noglobal (neither)
 
-For example, to download all particpants across all sites' ReHo images processed using C-PAC, without any frequency filtering or global signal regression:
-    python download_abide_preproc.py -d reho -p cpac -s nofilt_noglobal -o /path/to/local/download/dir
-
-The script will then search for and download the data to the local directory specified with the -o flag.
-
-Participants can also be selected based on phenotypic information. For example, to download the same outputs from the previous example, but using only male ASD participants scanned from Caltech between the ages of 2 and 30 years:
-    python download_abide_preproc.py -a -d reho -p cpac -s nofilt_noglobal -o /path/to/local/download/dir -gt 2 -lt 30 -x M -t Caltech
-
 For more information on the ABIDE preprocessed initiative, please check out http://preprocessed-connectomes-project.github.io/abide
